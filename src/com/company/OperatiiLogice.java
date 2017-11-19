@@ -85,11 +85,10 @@ public class OperatiiLogice {
                     casuta = numere[i + 1];
                     numere[i + 1] = numere[i];
                     numere[i] = casuta;
-
                 }
-
             }
         }
+        
         return numere;
     }
 }
