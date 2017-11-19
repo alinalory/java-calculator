@@ -1,7 +1,5 @@
 package com.company;
 
-import org.omg.CORBA.CODESET_INCOMPATIBLE;
-
 import java.util.HashMap;
 
 public class Login {
