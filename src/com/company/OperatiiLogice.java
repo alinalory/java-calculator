@@ -88,7 +88,7 @@ public class OperatiiLogice {
                 }
             }
         }
-        
+
         return numere;
     }
 }

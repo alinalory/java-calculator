@@ -21,7 +21,7 @@ public class Login {
                 System.out.println(username + Constante.WELCOME);
                 loggedIn = true;
             } else {
-                System.out.println("Userul sau parola sunt invalide!");
+                System.out.println(Constante.EROARE_LOGIN);
                 System.out.println("Mai ai " + (3 - counter) + " incercari ramase!");
                 counter++;
             }
