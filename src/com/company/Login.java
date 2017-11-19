@@ -13,9 +13,9 @@ public class Login {
         boolean loggedIn = false;
         int counter = 1;
         do {
-            System.out.print("Introdu userul: ");
+            System.out.print(Constante.USER);
             String username = citire.citireText();
-            System.out.print("Introdu parola: ");
+            System.out.print(Constante.PAROLA);
             String password = citire.citireText();
             if (password.equals(hashMap.get(username))) {
                 System.out.println(username + Constante.WELCOME);

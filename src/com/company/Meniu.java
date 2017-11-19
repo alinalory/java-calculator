@@ -3,6 +3,7 @@ package com.company;
 public class Meniu {
     CitireTastatura citire = new CitireTastatura();
     Calculator calc = new Calculator();
+    OperatiiLogice op = new OperatiiLogice();
 
 
     public void afiseazaMeniu(){
@@ -10,7 +11,12 @@ public class Meniu {
             "1. Adunare\n" +
             "2. Scadere\n" +
             "3. Inmultire\n" +
-            "4. Impartire\n");
+            "4. Impartire\n" +
+            "5. Maxim\n" +
+            "6. Minim\n" +
+            "7. Egalitate\n" +
+            "8. Ordonare crescator \n" +
+            "9. Ordoneaza descrescator");
     }
 
     public void runProgram(){
@@ -34,6 +40,21 @@ public class Meniu {
                 case 4:
                     impartire();
                     break;
+                case 5:
+                    maxim();
+                    break;
+                case 6:
+                    minim();
+                    break;
+                case 7:
+                    egalitate();
+                    break;
+                case 8:
+                    sortareAsc();
+                    break;
+                case 9:
+                    sortareDsc();
+                    break;
                 default:
                     optiuneCorecta = false;
             }
@@ -41,7 +62,7 @@ public class Meniu {
             if (optiuneCorecta) {
                 afiseazaMeniuNouaOperatie();
                 int optiune = citire.citireNumar();
-                if (2 == optiune) {
+                if (0 == optiune) {
                     otherOperation = false;
                     System.out.println(Constante.LOGOUT);
                 }
@@ -56,36 +77,71 @@ public class Meniu {
     public  void afiseazaMeniuNouaOperatie(){
         System.out.println("Selecteaza o noua optiune! \n " +
                 "1. Alta operatie matematica \n " +
-                "2. Iesire din program! "
+                "0. Iesire din program! "
         );
 
     }
     public void adunare(){
-        System.out.println("Introdu primul numar");
+        System.out.println(Constante.PRIMUL_NUMAR);
         double primulNumar = citire.citireNumar();
-        System.out.println("Introdu al doilea numar:");
+        System.out.println(Constante.DOILEA_NUMAR);
         double doileaNumar = citire.citireNumar();
-        System.out.println("Rezultatul adunarii este : " + calc.adunare(primulNumar,doileaNumar));
+        System.out.println(Constante.REZULTAT + calc.adunare(primulNumar,doileaNumar));
     }
     public void scadere(){
-        System.out.println("Introdu primul numar");
+        System.out.println(Constante.PRIMUL_NUMAR);
         double primulNumar = citire.citireNumar();
-        System.out.println("Introdu al doilea numar:");
+        System.out.println(Constante.DOILEA_NUMAR);
         double doileaNumar = citire.citireNumar();
-        System.out.println("Rezultatul scaderii este : " + calc.scadere(primulNumar,doileaNumar));
+        System.out.println(Constante.REZULTAT + calc.scadere(primulNumar,doileaNumar));
     }
     public void inmultire(){
-        System.out.println("Introdu primul numar");
+        System.out.println(Constante.PRIMUL_NUMAR);
         double primulNumar = citire.citireNumar();
-        System.out.println("Introdu al doilea numar:");
+        System.out.println(Constante.DOILEA_NUMAR);
         double doileaNumar = citire.citireNumar();
-        System.out.println("Rezultatul inmultirii este : " + calc.inmultire(primulNumar,doileaNumar));
+        System.out.println(Constante.REZULTAT + calc.inmultire(primulNumar,doileaNumar));
     }
     public void impartire(){
-        System.out.println("Introdu primul numar");
+        System.out.println(Constante.PRIMUL_NUMAR);
         double primulNumar = citire.citireNumar();
-        System.out.println("Introdu al doilea numar:");
+        System.out.println(Constante.DOILEA_NUMAR);
         double doileaNumar = citire.citireNumar();
-        System.out.println("Rezultatul impartirii este : " + calc.impartire(primulNumar,doileaNumar));
+        System.out.println(Constante.REZULTAT + calc.impartire(primulNumar,doileaNumar));
     }
+    public void maxim(){
+        System.out.println(Constante.PRIMUL_NUMAR);
+        double primulNumar = citire.citireNumar();
+        System.out.println(Constante.DOILEA_NUMAR);
+        double doileaNumar = citire.citireNumar();
+        System.out.println(Constante.REZULTAT_MAX + op.maximNumere(primulNumar,doileaNumar));
+    }
+    public void minim(){
+        System.out.println(Constante.PRIMUL_NUMAR);
+        double primulNumar = citire.citireNumar();
+        System.out.println(Constante.DOILEA_NUMAR);
+        double doileaNumar = citire.citireNumar();
+        System.out.println(Constante.REZULTAT_MIN + op.minimNumere(primulNumar,doileaNumar));
+    }
+    public void egalitate(){
+        System.out.println(Constante.PRIMUL_NUMAR);
+        double primulNumar = citire.citireNumar();
+        System.out.println(Constante.DOILEA_NUMAR);
+        double doileaNumar = citire.citireNumar();
+        System.out.println(Constante.REZULTAT_OP);
+        if (op.egalitate(primulNumar,doileaNumar))
+            System.out.println(Constante.REZULTAT_EGAL_POZITIV);
+        else
+            System.out.println(Constante.REZULTAT_EGAL_NEGATIV);
+    }
+
+    public void sortareAsc(){
+        op.ordonareCrescator();
+
+    }
+    public void sortareDsc(){
+        op.ordonareDescrescator();
+
+    }
+
 }
