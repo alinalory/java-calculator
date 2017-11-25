@@ -16,4 +16,8 @@ public class Calculator {
     public double impartire(double primulNumar, double doileaNumar) {
         return primulNumar / doileaNumar;
     }
+
+    public double modulo(double primulNumar, double doileaNumar) {
+        return primulNumar % doileaNumar;
+    }
 }

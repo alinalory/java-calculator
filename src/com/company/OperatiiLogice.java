@@ -37,8 +37,6 @@ public class OperatiiLogice {
             numere[i] = citire.citireNumar();
         }
         System.out.println(Mesaje.rezultat_ordonare_crescator);
-
-
         listareLista((sortArrayAsc(numere)));
         System.out.println("\n");
     }
