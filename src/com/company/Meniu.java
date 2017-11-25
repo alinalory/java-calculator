@@ -55,72 +55,80 @@ public class Meniu {
                 int optiune = citire.citireNumar();
                 if (0 == optiune) {
                     otherOperation = false;
-                    System.out.println(Constante.LOGOUT);
+                    System.out.println(Mesaje.logout);
                 }
 
             } else {
-                System.out.println(Constante.INVALIDSELECTION);
+                System.out.println(Mesaje.invalid_selection);
             }
 
         } while (otherOperation);
 
     }
+
     public  void afiseazaMeniuNouaOperatie(){
         System.out.println(Constante.MENIU_IESIRE);
 
     }
+
     public void adunare(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT + calc.adunare(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat + calc.adunare(primulNumar,doileaNumar));
     }
+
     public void scadere(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT + calc.scadere(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat + calc.scadere(primulNumar,doileaNumar));
     }
+
     public void inmultire(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT + calc.inmultire(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat + calc.inmultire(primulNumar,doileaNumar));
     }
+
     public void impartire(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT + calc.impartire(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat + calc.impartire(primulNumar,doileaNumar));
     }
+
     public void maxim(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT_MAX + op.maximNumere(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat_max + op.maximNumere(primulNumar,doileaNumar));
     }
+
     public void minim(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT_MIN + op.minimNumere(primulNumar,doileaNumar));
+        System.out.println(Mesaje.rezultat_min + op.minimNumere(primulNumar,doileaNumar));
     }
+
     public void egalitate(){
-        System.out.println(Constante.PRIMUL_NUMAR);
+        System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
-        System.out.println(Constante.DOILEA_NUMAR);
+        System.out.println(Mesaje.doilea_numar);
         double doileaNumar = citire.citireNumar();
-        System.out.println(Constante.REZULTAT_OP);
+        System.out.println(Mesaje.rezultat_op);
         if (op.egalitate(primulNumar,doileaNumar))
-            System.out.println(Constante.REZULTAT_EGAL_POZITIV);
+            System.out.println(Mesaje.rezultat_egal_pozitiv);
         else
-            System.out.println(Constante.REZULTAT_EGAL_NEGATIV);
+            System.out.println(Mesaje.rezultat_egal_negativ);
     }
 
     public void sortareAsc(){

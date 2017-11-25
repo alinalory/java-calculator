@@ -30,13 +30,13 @@ public class OperatiiLogice {
 
     public void ordonareCrescator() {
         CitireTastatura citire = new CitireTastatura();
-        System.out.println(Constante.LISTA_NUMERE);
+        System.out.println(Mesaje.lista_numere);
         int[] numere = new int[citire.citireNumar()];
-        System.out.println(Constante.MARIME_LISTA + numere.length + Constante.NUMERE);
+        System.out.println(Mesaje.marime_lista + numere.length + Mesaje.numere);
         for (int i = 0; i < numere.length; i++) {
             numere[i] = citire.citireNumar();
         }
-        System.out.println(Constante.REZULTAT_ORDONARE_CRESCATOR);
+        System.out.println(Mesaje.rezultat_ordonare_crescator);
 
 
         listareLista((sortArrayAsc(numere)));
@@ -44,13 +44,13 @@ public class OperatiiLogice {
     }
     public void ordonareDescrescator() {
         CitireTastatura citire = new CitireTastatura();
-        System.out.println(Constante.LISTA_NUMERE);
+        System.out.println(Mesaje.lista_numere);
         int[] numere = new int[citire.citireNumar()];
-        System.out.println(Constante.MARIME_LISTA + numere.length + Constante.NUMERE);
+        System.out.println(Mesaje.marime_lista + numere.length + Mesaje.numere);
         for (int i = 0; i < numere.length; i++) {
             numere[i] = citire.citireNumar();
         }
-        System.out.println(Constante.REZULTAT_ORDONARE_DECRESCATOR);
+        System.out.println(Mesaje.rezultat_ordonare_descrescator);
 
 
         listareLista((sortArrayDsc(numere)));

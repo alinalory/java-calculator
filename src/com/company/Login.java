@@ -13,15 +13,15 @@ public class Login {
         boolean loggedIn = false;
         int counter = 1;
         do {
-            System.out.print(Constante.USER);
+            System.out.print(Mesaje.user);
             String username = citire.citireText();
-            System.out.print(Constante.PAROLA);
+            System.out.print(Mesaje.parola);
             String password = citire.citireText();
             if (password.equals(hashMap.get(username))) {
-                System.out.println(username + Constante.WELCOME);
+                System.out.println(username + Mesaje.welcome);
                 loggedIn = true;
             } else {
-                System.out.println(Constante.EROARE_LOGIN);
+                System.out.println(Mesaje.eroare_login);
                 System.out.println("Mai ai " + (3 - counter) + " incercari ramase!");
                 counter++;
             }
