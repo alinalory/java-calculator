@@ -12,7 +12,7 @@ public class CitireTastatura {
                     fromUser = scan.nextInt();
                     repeat = false;
                 } catch (InputMismatchException exception) {
-                    System.out.println(Constante.EROARE_INPUT);
+                    System.out.println(Mesaje.eroare_input);
                 }
             }
             while (repeat);
