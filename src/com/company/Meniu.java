@@ -65,10 +65,12 @@ public class Meniu {
         } while (otherOperation);
 
     }
+
     public  void afiseazaMeniuNouaOperatie(){
         System.out.println(Constante.MENIU_IESIRE);
 
     }
+
     public void adunare(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -76,6 +78,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat + calc.adunare(primulNumar,doileaNumar));
     }
+
     public void scadere(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -83,6 +86,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat + calc.scadere(primulNumar,doileaNumar));
     }
+
     public void inmultire(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -90,6 +94,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat + calc.inmultire(primulNumar,doileaNumar));
     }
+
     public void impartire(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -97,6 +102,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat + calc.impartire(primulNumar,doileaNumar));
     }
+
     public void maxim(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -104,6 +110,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat_max + op.maximNumere(primulNumar,doileaNumar));
     }
+
     public void minim(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();
@@ -111,6 +118,7 @@ public class Meniu {
         double doileaNumar = citire.citireNumar();
         System.out.println(Mesaje.rezultat_min + op.minimNumere(primulNumar,doileaNumar));
     }
+
     public void egalitate(){
         System.out.println(Mesaje.primul_numar);
         double primulNumar = citire.citireNumar();

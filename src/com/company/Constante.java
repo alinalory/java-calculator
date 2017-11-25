@@ -1,11 +1,8 @@
 package com.company;
-
-import java.security.PublicKey;
 import java.util.HashMap;
 
 public class Constante {
-    public static final String MARIME_LISTA = "Introdu cele ";
-    public static final String NUMERE = " numere: ";
+
     public static final String MENIU_OPTIUNI = "Selecteaza o optiune: \n" +
             "1. Adunare\n" +
             "2. Scadere\n" +

@@ -12,6 +12,8 @@ public class Mesaje {
     public static String primul_numar = "Introdu primul numar";
     public static String doilea_numar = "Introdu al doilea numar";
     public static String rezultat = "Rezultatul operatiei matematice este: ";
+    public static String marime_lista = "Introdu cele ";
+    public static String numere = " numere: ";
     public static String rezultat_op = "Rezultatul este: ";
     public static String rezultat_max = "Numarul maxim este: ";
     public static String rezultat_min = "Numarul minim este: ";

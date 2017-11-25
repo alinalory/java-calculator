@@ -32,7 +32,7 @@ public class OperatiiLogice {
         CitireTastatura citire = new CitireTastatura();
         System.out.println(Mesaje.lista_numere);
         int[] numere = new int[citire.citireNumar()];
-        System.out.println(Constante.MARIME_LISTA + numere.length + Constante.NUMERE);
+        System.out.println(Mesaje.marime_lista + numere.length + Mesaje.numere);
         for (int i = 0; i < numere.length; i++) {
             numere[i] = citire.citireNumar();
         }
@@ -46,7 +46,7 @@ public class OperatiiLogice {
         CitireTastatura citire = new CitireTastatura();
         System.out.println(Mesaje.lista_numere);
         int[] numere = new int[citire.citireNumar()];
-        System.out.println(Constante.MARIME_LISTA + numere.length + Constante.NUMERE);
+        System.out.println(Mesaje.marime_lista + numere.length + Mesaje.numere);
         for (int i = 0; i < numere.length; i++) {
             numere[i] = citire.citireNumar();
         }
